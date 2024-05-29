@@ -1,0 +1,738 @@
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .rao {
+    text-align: center;
+  }
+  
+  .logo {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .menubar {
+    display: flex;
+    justify-content: center;
+    background-color:white;
+  }
+  
+  .menubar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .menubar li {
+    padding: 14px 20px;
+  }
+  
+  .menubar a {
+    text-decoration: none;
+    color: black !important;
+  }
+  
+  .submenu ul {
+    display: none;
+  }
+  
+  /* Responsive styles */
+  .hamburger .bar {
+    display: block;
+    width: 10px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+  }
+  
+  
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar Styles */
+.rohit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.menubar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.menubar ul {
+    display: flex;
+    list-style: none;
+}
+
+.menubar ul li {
+    color: red;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+}
+
+.menubar ul li:hover {
+    color: orangered;
+}
+
+
+
+.menubar ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+}
+
+.menubar ul li:hover a {
+    color: orangered;
+}
+
+.submenu {
+    display: none;
+    text-align: left;
+}
+
+.menubar ul li:hover .submenu {
+    display: block;
+    position: absolute;
+    top: 40px;
+    background-color: white;
+}
+
+.menubar ul li:hover .submenu ul {
+    display: block;
+}
+
+.menubar ul li:hover .submenu ul li {
+    width: 150px;
+    text-align: center;
+}
+
+.menubar ul li:hover .submenu ul li a {
+    color: black;
+    font-size: 15px;
+}
+
+.menubar ul li:hover .submenu ul li a:hover {
+    color: orangered;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+/* Responsive Design for Mobile Views */
+@media (max-width: 667px) {
+    .menubar {
+        display: none;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .menubar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menubar ul li {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        border-top: 1px solid #ccc;
+    }
+
+    .menubar ul li a {
+        font-size: 20px;
+    }
+
+    .submenu {
+        position: static;
+        border: none;
+    }
+
+    .submenu ul {
+        flex-direction: column;
+    }
+
+    .hamburger-menu {
+        display: inline-table;
+    }
+
+    .logo {
+        width:33%;
+        margin-right: 150px;
+    }
+
+    .hamburger {
+        display: flow;
+        cursor: pointer;
+        padding: 9px 23px;
+        background-color: #333;
+        color: white;
+        text-align: left;
+        margin-left: 272px;
+        margin-top: -56px;
+    }
+    .rohit {
+        display: inline-grid;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        background-color: white;
+        width: 18%;
+        top: 0;
+        z-index: 1000;
+        padding: 10px 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .menubar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menubar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menubar ul li {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        border-top: 1px solid #ccc;
+    }
+
+    .menubar ul li a {
+        font-size: 20px;
+    }
+
+    .submenu {
+        position: static;
+        border: none;
+    }
+
+    .submenu ul {
+        flex-direction: column;
+    }
+
+    .hamburger-menu {
+        display: inline-table;
+    }
+
+    .logo {
+        width:52%;
+        margin-right: 308px;
+    }
+
+    .rohit {
+        display: inline-grid;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        padding: 10px 20px;
+    }
+
+    .hamburger {
+        padding: 30px 50px;
+        margin-left: 573px;
+        margin-top: -134px;
+    }
+    .menubar {
+        display: none;
+        flex-direction: column;
+      }
+    
+      .menubar ul {
+        flex-direction: column;
+      }
+    
+      .hamburger {
+          display: flow;
+          cursor: pointer;
+          padding: 25px 53px;
+          background-color: #333;
+          color: white;
+          text-align: left;
+          margin-left: 604px;
+          margin-top: -123px;
+      }
+    
+      .menubar.active {
+        display: flex;
+      }
+     
+     
+  
+}
+
+
+/* Toggle menu display */
+.menubar.active {
+    display: flex;
+}
+
+.hamburger-menu.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 8px;
+    position: relative;
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: -8px;
+    position: relative;
+}
+
+/* Other Element Styles */
+.baoo {
+    width: 95%;
+    height: 500px;
+    margin-left: 40px;
+}
+
+.tem {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.tem2 {
+    height: 60%;
+    width: 90%;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+.head, .head1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.paraa, .para, .pt {
+    font-size: 17px;
+    color: gray;
+    line-height: 30px;
+}
+
+.ph {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.team {
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 100px;
+    width: 95%;
+}
+
+.tom, .tom2 {
+    height: 450px;
+    width: 400px;
+    border: 2px solid white;
+    margin: 20px;
+}
+
+.test {
+    width: 350px;
+    height: 122px;
+    border: 2px solid white;
+    margin-left: 10px;
+    margin-top: 313px;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.ddt {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.out {
+    display: flex;
+    align-items: center;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ing {
+    border-radius: 5px;
+}
+
+.pt {
+    font-size: 16px;
+    color: grey;
+    padding-left: 20px;
+}
+
+.ol {
+    padding-left: 20px;
+}
+
+.lop {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+.ty {
+    height: 50%;
+    width: 45%;
+}
+
+.shri {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pt {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.in {
+    margin-top: 15%;
+    margin-left: 80px;
+}
+
+.inn {
+    border-radius: 10px;
+}
+
+.ooh {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ooh1 {
+    width: 40%;
+    height: 560px;
+    text-align: left;
+    background-color: orangered;
+    color: white;
+    padding-left: 200px;
+    padding-top: 50px;
+}
+
+.hip {
+    font-size: 40px;
+}
+
+.asho {
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    background-color: maroon;
+    text-align: left;
+    color: white;
+    padding-top: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -5px;
+}
+
+.rahul {
+    background-color: orange;
+    color: aliceblue;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 40px;
+    font-size: 18px;
+}
+
+.do {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: black;
+    height: 380px;
+    width: 100%;
+    color: #fefcf4;
+    padding-top: 40px;
+}
+
+.opu {
+    margin: 30px;
+    font-size: 15px;
+}
+
+.plo {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+/* Responsive design */
+@media (min-width: 375px) and (max-width: 667px) {
+    .baoo {
+        width: 98%;
+        height: 310px;
+        margin-left: 5px;
+    }
+
+    .tem2 {
+        height: 60%;
+        width: 90%;
+        margin-right: 40px;
+        text-align: justify;
+    }
+
+    .team {
+        justify-content: left;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 95%;
+        margin-left: 10px;
+    }
+
+    .tem {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .head, .head1 {
+        font-size: 30px;
+        margin: 15px;
+    }
+
+    .paraa, .para, .pt {
+        font-size: 15px;
+    }
+
+    .tom, .tom2 {
+        width: 95%;
+        margin: 10px;
+    }
+
+    .test {
+        width: 95%;
+        height: auto;
+    }
+
+    .ddt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .out {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lop {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ty {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .ooh1 {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hip {
+        font-size: 30px;
+    }
+
+    
+        .asho {
+            justify-content: center;
+            width: 100%;
+            height: 200px;
+            background-color: maroon;
+            text-align: left;
+            color: white;
+            padding-top: 0px;
+            font-size: 14px;
+            line-height: 37px;
+            display: flex;
+            flex-direction: row;
+            margin-top: -166px;
+            padding-left: 20px;
+        }
+        
+        
+       .rahul {
+    background-color: orange;
+    color: aliceblue;
+    height: 42px;
+    width: 181px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+    font-size: 15px;
+    text-decoration: none;
+}
+        
+        .do {
+            justify-content: center;
+            flex-direction: row;
+            background-color: black;
+            height: auto;
+            width: 100%;
+        color: #fefcf4;
+    }
+    
+    .opu, .plo {
+        margin: 10px;
+        font-size: 10px;
+    }
+    
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+.paraa, .para, .pt {
+    font-size: 20px;
+    color: gray;
+    line-height: 30px;
+    text-align: justify;
+    margin-left: 30px;
+}
+.baoo {
+    width: 95%;
+    height: 894px;
+    margin-left: 20px;
+}
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 50px;
+    /* width: 76%; */
+    justify-content: center;
+}
+
+.lop {
+    display: contents;
+    flex-direction: row;
+    margin-left: 5px;
+}
+
+
+
+.ty {
+    height: 50%;
+    width: 95%;
+}
+
+
+img, svg {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+.ooh1 {
+    width: 31%;
+    height: 659px;
+    text-align: left;
+    background-color: orangered;
+    color: white;
+    padding-left: 48px;
+    padding-top: -4px;
+}
+
+.hip {
+    font-size: 22px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+.asho{
+    padding-left: 20px;
+    height: 163px;
+}
+.do{
+    height: 410px;
+
+}
+
+.formdiv{
+top: 35%;
+
+}
+
+.inn {
+    border-radius: 10px;
+    width: 98%;}
+
+  }
+

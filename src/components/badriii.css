@@ -1,0 +1,106 @@
+.formdiv {
+    position: fixed;
+    top: 15%;
+    left: 20%;
+    width: 50%;
+    height: auto;
+    /* transform: translate(-5%, -5%); */
+    background-color: white;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    line-height: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .form-label{
+color: black;
+  }
+  .close-btn{
+font-size: 20px !important;
+display: flex;
+justify-content: right;
+margin-left: 95%;
+align-items: right;
+border: none;
+background-color: white;
+  }
+
+
+  @media (min-width: 375px) and (max-width: 667px) {
+
+.formdiv{
+
+  left: 1%;
+  width: 49%;
+
+
+}
+
+
+
+  }
+  @media (max-width: 667px) {
+    .menubar {
+        display: none;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .menubar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menubar ul li {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        border-top: 1px solid #ccc;
+    }
+
+    .menubar ul li a {
+        font-size: 20px;
+    }
+
+    .submenu {
+        position: static;
+        border: none;
+    }
+
+    .submenu ul {
+        flex-direction: column;
+    }
+
+    .hamburger-menu {
+        display: inline-table;
+    }
+
+    .logo {
+        width:53%;
+        margin-right: 172px;
+    }
+
+    .hamburger {
+        display: flow;
+        cursor: pointer;
+        padding: 9px 23px;
+        background-color: #333;
+        color: white;
+        text-align: left;
+        margin-left: 272px;
+        margin-top: -56px;
+    }
+    .rohit {
+      display: inline-grid;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      background-color: white;
+      width: 51%;
+      height: 7%;
+      top: 0;
+      z-index: 1000;
+      padding: 10px 20px;
+  }
+}
+
